@@ -1,0 +1,16 @@
+#############################################		
+		Technologies
+#############################################
+ReactJS: For web app frontend
+OpenAI library: For openAI API
+Laravel: For Backend development and API consumption
+Flutter: For Mobile frontendversion 
+TailwindCSS: for CSS 
+Postgresql: For Databases
+
+##############################################
+		Architecture
+##############################################
+
+MVC: For development
+Microservice: For deployment
