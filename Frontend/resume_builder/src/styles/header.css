@@ -1,0 +1,23 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 2.5rem;
+}
+
+.navigations{
+    display: flex;
+}
+
+.navigations nav ul li {
+    list-style-type: none;
+
+}
+
+a{
+    color: #fff;
+}
