@@ -1,0 +1,190 @@
+openapi: 3.0.3
+info:
+  title: CVBuilder
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/logout:
+    get:
+      summary: ''
+      operationId: getApiLogout
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+  /api/listUser:
+    post:
+      summary: ''
+      operationId: postApiListUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: consultant
+              required:
+                - type
+      security: []
+  /api/updateUser:
+    post:
+      summary: ''
+      operationId: postApiUpdateUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: administrator
+              required:
+                - type
+      security: []
+  /api/testLogin:
+    get:
+      summary: ''
+      operationId: getApiTestLogin
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: /api/testLogin
+      tags:
+        - Endpoints
+      security: []
+  /api/createUser:
+    post:
+      summary: ''
+      operationId: postApiCreateUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: administrator
+              required:
+                - type
+      security: []
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: consultant
+              required:
+                - type
+      security: []
+  /api/verifyEmail:
+    post:
+      summary: ''
+      operationId: postApiVerifyEmail
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: administrator
+              required:
+                - type
+      security: []
+  /api/recoveryPassword:
+    post:
+      summary: ''
+      operationId: postApiRecoveryPassword
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: 'Must be one of <code>consultant</code> or <code>administrator</code>.'
+                  example: consultant
+              required:
+                - type
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
